@@ -19,9 +19,9 @@
     }
 
     .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 30px;
       text-align: center;
       margin-bottom: 30px;
     }
@@ -30,6 +30,8 @@
       max-width: 100%;
       width: auto;
       height: auto;
+      border: 5px solid white; /* حاشیه دور عکس */
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3); /* افکت سه بعدی برای عکس */
     }
 
     .download-button {
@@ -39,6 +41,8 @@
       font-size: 1.5em;
       text-decoration: none;
       border-radius: 5px;
+      border: 5px solid white; /* حاشیه دور دکمه */
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3); /* افکت سه بعدی برای دکمه */
     }
 
     .download-button:hover {
@@ -50,30 +54,32 @@
   <h1>برنامه های اندروید</h1>
 
   <div class="container">
-    <h2>hidifyng</h2>
-    <a href="https://mreski071.github.io/All-V2ray-Application/hidifyng.jpg" target="_blank">
-      <img src="https://mreski071.github.io/All-V2ray-Application/hidifyng.jpg" alt="دانلود عکس hidifyng">
-    </a>
-    <br>
-    <a class="download-button" href="https://github.com/hiddify/HiddifyNG/releases/download/v6.0.4/HiddifyNG.apk" target="_blank">دانلود hidifyng</a>
-  </div>
+    <div>
+      <h2>hidifyng</h2>
+      <a href="https://mreski071.github.io/All-V2ray-Application/hidifyng.jpg" target="_blank">
+        <img src="https://mreski071.github.io/All-V2ray-Application/hidifyng.jpg" alt="دانلود عکس hidifyng">
+      </a>
+      <br>
+      <a class="download-button" href="https://github.com/hiddify/HiddifyNG/releases/download/v6.0.4/HiddifyNG.apk" target="_blank">دانلود hidifyng</a>
+    </div>
 
-  <div class="container">
-    <h2>nekoray</h2>
-    <a href="https://mreski071.github.io/All-V2ray-Application/nekoray.jpg" target="_blank">
-      <img src="https://mreski071.github.io/All-V2ray-Application/nekoray.jpg" alt="دانلود عکس nekoray">
-    </a>
-    <br>
-    <a class="download-button" href="https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/download/1.1.6/NB4A-1.1.6-arm64-v8a.apk" target="_blank">دانلود nekoray</a>
-  </div>
+    <div>
+      <h2>nekoray</h2>
+      <a href="https://mreski071.github.io/All-V2ray-Application/nekoray.jpg" target="_blank">
+        <img src="https://mreski071.github.io/All-V2ray-Application/nekoray.jpg" alt="دانلود عکس nekoray">
+      </a>
+      <br>
+      <a class="download-button" href="https://github.com/MatsuriDayo/NekoBoxForAndroid/releases/download/1.1.6/NB4A-1.1.6-arm64-v8a.apk" target="_blank">دانلود nekoray</a>
+    </div>
 
-  <div class="container">
-    <h2>v2ray</h2>
-    <a href="https://mreski071.github.io/All-V2ray-Application/v2ray.jpg" target="_blank">
-      <img src="https://mreski071.github.io/All-V2ray-Application/v2ray.jpg" alt="دانلود عکس v2ray">
-    </a>
-    <br>
-    <a class="download-button" href="https://github.com/2dust/v2rayNG/releases/download/1.8.5/v2rayNG_1.8.5.apk" target="_blank">دانلود v2ray</a>
+    <div>
+      <h2>v2ray</h2>
+      <a href="https://mreski071.github.io/All-V2ray-Application/v2ray.jpg" target="_blank">
+        <img src="https://mreski071.github.io/All-V2ray-Application/v2ray.jpg" alt="دانلود عکس v2ray">
+      </a>
+      <br>
+      <a class="download-button" href="https://github.com/2dust/v2rayNG/releases/download/1.8.5/v2rayNG_1.8.5.apk" target="_blank">دانلود v2ray</a>
+    </div>
   </div>
 </body>
-</html
+</html>
